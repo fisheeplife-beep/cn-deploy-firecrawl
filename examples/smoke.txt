@@ -1,0 +1,41 @@
+=== compose ps 2026-11-02 09:51:10 +0800 ===
+NAME                                IMAGE                                         COMMAND                  SERVICE              CREATED          STATUS                      PORTS
+cn-firecrawl-api-1                  ghcr.io/firecrawl/firecrawl:2.11.162          "docker-entrypoint.s…"   api                  17 seconds ago   Exited (1) 1 second ago     
+cn-firecrawl-nuq-postgres-1         ghcr.io/firecrawl/nuq-postgres:latest         "docker-entrypoint.s…"   nuq-postgres         18 seconds ago   Up 16 seconds               5432/tcp
+cn-firecrawl-playwright-service-1   ghcr.io/firecrawl/playwright-service:latest   "docker-entrypoint.s…"   playwright-service   18 seconds ago   Exited (1) 16 seconds ago   
+cn-firecrawl-rabbitmq-1             rabbitmq:3-management                         "docker-entrypoint.s…"   rabbitmq             18 seconds ago   Up 16 seconds (healthy)     4369/tcp, 5671-5672/tcp, 15671-15672/tcp, 15691-15692/tcp, 25672/tcp
+cn-firecrawl-redis-1                redis:alpine                                  "docker-entrypoint.s…"   redis                18 seconds ago   Up 16 seconds               6379/tcp
+
+=== wait readiness ===
+try 1: HTTP 000000 body=
+try 2: HTTP 000000 body=
+try 3: HTTP 000000 body=
+try 4: HTTP 000000 body=
+try 5: HTTP 000000 body=
+try 6: HTTP 000000 body=
+try 7: HTTP 000000 body=
+try 8: HTTP 000000 body=
+try 9: HTTP 000000 body=
+try 10: HTTP 000000 body=
+api-1  | [36m>[0m [36m[1mnuq-worker-0  [0m [2mnode dist/src/services/worker/nuq-worker.js[0m
+api-1  | [36m>[0m [36m[1mnuq-worker-1  [0m [2mnode dist/src/services/worker/nuq-worker.js[0m
+api-1  | [36m>[0m [36m[1mnuq-worker-2  [0m [2mnode dist/src/services/worker/nuq-worker.js[0m
+api-1  | [36m>[0m [36m[1mnuq-worker-3  [0m [2mnode dist/src/services/worker/nuq-worker.js[0m
+api-1  | [36m>[0m [36m[1mnuq-worker-4  [0m [2mnode dist/src/services/worker/nuq-worker.js[0m
+api-1  | [36m>[0m [36m[1mnuq-prefetch-worker[0m [2mnode dist/src/services/worker/nuq-prefetch-worker.js[0m
+... (truncated) ...
+api-1  | [31m✗[0m [34m[1mworker        [0m [2m3.4s[0m [31m(null)[0m
+api-1  | [31m✗[0m [36m[1mnuq-worker-4  [0m [2m3.4s[0m [31m(null)[0m
+api-1  | [31m✗[0m [36m[1mnuq-reconciler[0m [2m3.4s[0m [31m(null)[0m
+api-1  | [31m✗[0m [32m[1mapi           [0m [2m3.4s[0m [31m(null)[0m
+api-1  | [31m✗[0m [36m[1mnuq-worker-0  [0m [2m3.4s[0m [31m(null)[0m
+api-1  | [31m✗[0m [36m[1mnuq-worker-1  [0m [2m3.4s[0m [31m(null)[0m
+api-1  | [31m✗[0m [35m[1mextract-worker[0m [2m3.5s[0m [31m(null)[0m
+api-1  | [32m✓[0m All processes terminated
+NAME                                IMAGE                                         COMMAND                  SERVICE              CREATED         STATUS                     PORTS
+cn-firecrawl-api-1                  ghcr.io/firecrawl/firecrawl:2.11.162          "docker-entrypoint.s…"   api                  5 minutes ago   Exited (1) 4 minutes ago   
+cn-firecrawl-nuq-postgres-1         ghcr.io/firecrawl/nuq-postgres:latest         "docker-entrypoint.s…"   nuq-postgres         5 minutes ago   Up 5 minutes               5432/tcp
+cn-firecrawl-playwright-service-1   ghcr.io/firecrawl/playwright-service:latest   "docker-entrypoint.s…"   playwright-service   5 minutes ago   Exited (1) 5 minutes ago   
+cn-firecrawl-rabbitmq-1             rabbitmq:3-management                         "docker-entrypoint.s…"   rabbitmq             5 minutes ago   Up 5 minutes (healthy)     4369/tcp, 5671-5672/tcp, 15671-15672/tcp, 15691-15692/tcp, 25672/tcp
+cn-firecrawl-redis-1                redis:alpine                                  "docker-entrypoint.s…"   redis                5 minutes ago   Up 5 minutes               6379/tcp
+READINESS FAILED

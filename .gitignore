@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+compose/.env
+compose/.env.*
+!compose/.env.example
+data/
+*.log
+.DS_Store

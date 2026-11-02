@@ -1,0 +1,394 @@
+=== docker client/server (Asia/Shanghai 2026-11-02 09:49:32 +0800) ===
+Client:
+ Version:           27.5.1
+ API version:       1.47
+ Go version:        go1.22.11
+ Git commit:        9f9e405
+ Built:             Wed Jan 22 13:40:02 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          27.5.1
+  API version:      1.47 (minimum version 1.24)
+  Go version:       go1.22.11
+  Git commit:       4c9b3b0
+  Built:            Wed Jan 22 13:41:24 2025
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v1.7.25
+  GitCommit:        bcc810d6b9066471b0b6fa75f557a15a1cbf31bb
+ runc:
+  Version:          1.2.4
+  GitCommit:        v1.2.4-0-g6c52b3f
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+=== pull attempts ===
+PULL redis:alpine
+alpine: Pulling from library/redis
+5e9b4a97f639: Pulling fs layer
+cea19da2b361: Pulling fs layer
+bc92976dd070: Pulling fs layer
+7379ba8f71f2: Pulling fs layer
+232fbf3af8e0: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+74c3c7a694d3: Pulling fs layer
+7379ba8f71f2: Waiting
+232fbf3af8e0: Waiting
+74c3c7a694d3: Waiting
+4f4fb700ef54: Waiting
+bc92976dd070: Verifying Checksum
+bc92976dd070: Download complete
+cea19da2b361: Download complete
+5e9b4a97f639: Verifying Checksum
+5e9b4a97f639: Download complete
+5e9b4a97f639: Pull complete
+cea19da2b361: Pull complete
+bc92976dd070: Pull complete
+232fbf3af8e0: Verifying Checksum
+232fbf3af8e0: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+7379ba8f71f2: Download complete
+74c3c7a694d3: Verifying Checksum
+74c3c7a694d3: Download complete
+7379ba8f71f2: Pull complete
+232fbf3af8e0: Pull complete
+4f4fb700ef54: Pull complete
+74c3c7a694d3: Pull complete
+Digest: sha256:21090af93f8324db2f0f0f4f38a7c60369d47d917e000c3423d89d2ae2883537
+Status: Downloaded newer image for redis:alpine
+docker.io/library/redis:alpine
+OK redis:alpine
+PULL rabbitmq:3-management
+3-management: Pulling from library/rabbitmq
+20043066d3d5: Pulling fs layer
+3fadc669ef11: Pulling fs layer
+7084ac8f4ab6: Pulling fs layer
+beb0d870d438: Pulling fs layer
+d63c4408fdb7: Pulling fs layer
+efa05c660812: Pulling fs layer
+f4e7f62f4b80: Pulling fs layer
+5e1c03b67a78: Pulling fs layer
+14e6209d5fa8: Pulling fs layer
+d686b50ce172: Pulling fs layer
+5e1c03b67a78: Waiting
+beb0d870d438: Waiting
+14e6209d5fa8: Waiting
+d63c4408fdb7: Waiting
+efa05c660812: Waiting
+d686b50ce172: Waiting
+f4e7f62f4b80: Waiting
+7084ac8f4ab6: Verifying Checksum
+7084ac8f4ab6: Download complete
+3fadc669ef11: Verifying Checksum
+3fadc669ef11: Download complete
+20043066d3d5: Verifying Checksum
+20043066d3d5: Download complete
+beb0d870d438: Verifying Checksum
+beb0d870d438: Download complete
+efa05c660812: Download complete
+f4e7f62f4b80: Verifying Checksum
+f4e7f62f4b80: Download complete
+d63c4408fdb7: Verifying Checksum
+d63c4408fdb7: Download complete
+5e1c03b67a78: Verifying Checksum
+5e1c03b67a78: Download complete
+14e6209d5fa8: Verifying Checksum
+d686b50ce172: Verifying Checksum
+d686b50ce172: Download complete
+20043066d3d5: Pull complete
+3fadc669ef11: Pull complete
+7084ac8f4ab6: Pull complete
+beb0d870d438: Pull complete
+d63c4408fdb7: Pull complete
+efa05c660812: Pull complete
+f4e7f62f4b80: Pull complete
+5e1c03b67a78: Pull complete
+14e6209d5fa8: Pull complete
+d686b50ce172: Pull complete
+Digest: sha256:e582c0bc7766f3342496d8485efb5a1df782b5ce3886ad017e2eaae442311f69
+Status: Downloaded newer image for rabbitmq:3-management
+docker.io/library/rabbitmq:3-management
+OK rabbitmq:3-management
+PULL ghcr.io/firecrawl/nuq-postgres:latest
+latest: Pulling from firecrawl/nuq-postgres
+ecc510c1e359: Pulling fs layer
+fcdd3a481359: Pulling fs layer
+b86134c2eeb6: Pulling fs layer
+57644501a07f: Pulling fs layer
+affbe3357b39: Pulling fs layer
+3be737420556: Pulling fs layer
+e30751283c57: Pulling fs layer
+c5602f014e9e: Pulling fs layer
+c9432d362cca: Pulling fs layer
+dc30f2779c66: Pulling fs layer
+d43ee31e40df: Pulling fs layer
+8aebe6431dc8: Pulling fs layer
+52fc2be321a4: Pulling fs layer
+99ce35cabaf9: Pulling fs layer
+4a8beb34437d: Pulling fs layer
+5348a284d77e: Pulling fs layer
+ee3d407ae9c8: Pulling fs layer
+57644501a07f: Waiting
+affbe3357b39: Waiting
+3be737420556: Waiting
+e30751283c57: Waiting
+c5602f014e9e: Waiting
+c9432d362cca: Waiting
+dc30f2779c66: Waiting
+5348a284d77e: Waiting
+d43ee31e40df: Waiting
+ee3d407ae9c8: Waiting
+8aebe6431dc8: Waiting
+52fc2be321a4: Waiting
+99ce35cabaf9: Waiting
+4a8beb34437d: Waiting
+fcdd3a481359: Download complete
+b86134c2eeb6: Verifying Checksum
+b86134c2eeb6: Download complete
+57644501a07f: Verifying Checksum
+57644501a07f: Download complete
+ecc510c1e359: Download complete
+affbe3357b39: Download complete
+3be737420556: Verifying Checksum
+3be737420556: Download complete
+e30751283c57: Verifying Checksum
+e30751283c57: Download complete
+c5602f014e9e: Download complete
+dc30f2779c66: Verifying Checksum
+dc30f2779c66: Download complete
+d43ee31e40df: Verifying Checksum
+d43ee31e40df: Download complete
+8aebe6431dc8: Download complete
+52fc2be321a4: Verifying Checksum
+52fc2be321a4: Download complete
+99ce35cabaf9: Verifying Checksum
+99ce35cabaf9: Download complete
+4a8beb34437d: Download complete
+5348a284d77e: Verifying Checksum
+5348a284d77e: Download complete
+ee3d407ae9c8: Verifying Checksum
+ee3d407ae9c8: Download complete
+c9432d362cca: Verifying Checksum
+c9432d362cca: Download complete
+ecc510c1e359: Pull complete
+fcdd3a481359: Pull complete
+b86134c2eeb6: Pull complete
+57644501a07f: Pull complete
+affbe3357b39: Pull complete
+3be737420556: Pull complete
+e30751283c57: Pull complete
+c5602f014e9e: Pull complete
+c9432d362cca: Pull complete
+dc30f2779c66: Pull complete
+d43ee31e40df: Pull complete
+8aebe6431dc8: Pull complete
+52fc2be321a4: Pull complete
+99ce35cabaf9: Pull complete
+4a8beb34437d: Pull complete
+5348a284d77e: Pull complete
+ee3d407ae9c8: Pull complete
+Digest: sha256:d719b36160eac2fcbe16dc7e7360ddb9c82c40ea5da183d07bf4a755c6a0b2ae
+Status: Downloaded newer image for ghcr.io/firecrawl/nuq-postgres:latest
+ghcr.io/firecrawl/nuq-postgres:latest
+OK ghcr.io/firecrawl/nuq-postgres:latest
+PULL ghcr.io/firecrawl/firecrawl:2.11.162
+2.11.162: Pulling from firecrawl/firecrawl
+597c6c618d36: Pulling fs layer
+973430fa3455: Pulling fs layer
+6819702822a0: Pulling fs layer
+4ea6725c9a72: Pulling fs layer
+3035b94809cf: Pulling fs layer
+ec6dcb94d13b: Pulling fs layer
+a86bd32e0ca4: Pulling fs layer
+260f071ccaf2: Pulling fs layer
+b811080591f3: Pulling fs layer
+3cde7b7c00ee: Pulling fs layer
+04f4a1ca205e: Pulling fs layer
+b11f22b1c2be: Pulling fs layer
+4ea6725c9a72: Waiting
+831ab13634a4: Pulling fs layer
+3035b94809cf: Waiting
+63e516347ebe: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+ec6dcb94d13b: Waiting
+3cde7b7c00ee: Waiting
+04f4a1ca205e: Waiting
+260f071ccaf2: Waiting
+b811080591f3: Waiting
+b11f22b1c2be: Waiting
+831ab13634a4: Waiting
+63e516347ebe: Waiting
+4f4fb700ef54: Waiting
+a86bd32e0ca4: Waiting
+973430fa3455: Verifying Checksum
+973430fa3455: Download complete
+4ea6725c9a72: Verifying Checksum
+4ea6725c9a72: Download complete
+597c6c618d36: Verifying Checksum
+597c6c618d36: Download complete
+3035b94809cf: Verifying Checksum
+3035b94809cf: Download complete
+ec6dcb94d13b: Verifying Checksum
+ec6dcb94d13b: Download complete
+6819702822a0: Verifying Checksum
+6819702822a0: Download complete
+b811080591f3: Download complete
+597c6c618d36: Pull complete
+973430fa3455: Pull complete
+a86bd32e0ca4: Verifying Checksum
+a86bd32e0ca4: Download complete
+04f4a1ca205e: Verifying Checksum
+04f4a1ca205e: Download complete
+6819702822a0: Pull complete
+4ea6725c9a72: Pull complete
+3035b94809cf: Pull complete
+260f071ccaf2: Verifying Checksum
+260f071ccaf2: Download complete
+ec6dcb94d13b: Pull complete
+831ab13634a4: Download complete
+63e516347ebe: Verifying Checksum
+63e516347ebe: Download complete
+4f4fb700ef54: Download complete
+a86bd32e0ca4: Pull complete
+3cde7b7c00ee: Verifying Checksum
+3cde7b7c00ee: Download complete
+260f071ccaf2: Pull complete
+b811080591f3: Pull complete
+b11f22b1c2be: Verifying Checksum
+b11f22b1c2be: Download complete
+3cde7b7c00ee: Pull complete
+04f4a1ca205e: Pull complete
+b11f22b1c2be: Pull complete
+831ab13634a4: Pull complete
+63e516347ebe: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:1b223ef18d410f67615f32ccaa3dcedfc26af4286f096247bddca3b624545e63
+Status: Downloaded newer image for ghcr.io/firecrawl/firecrawl:2.11.162
+ghcr.io/firecrawl/firecrawl:2.11.162
+OK ghcr.io/firecrawl/firecrawl:2.11.162
+PULL ghcr.io/firecrawl/playwright-service:latest
+latest: Pulling from firecrawl/playwright-service
+11422d7ca1a4: Pulling fs layer
+b43ad0aedb87: Pulling fs layer
+ba8be34911c2: Pulling fs layer
+696628b66b50: Pulling fs layer
+9d58805976c1: Pulling fs layer
+124699373f49: Pulling fs layer
+503c8399e5f1: Pulling fs layer
+5bf2162ae7d3: Pulling fs layer
+deb688edebb2: Pulling fs layer
+fa2814be645c: Pulling fs layer
+4c3a8c614c3a: Pulling fs layer
+ccdba1214dc6: Pulling fs layer
+60698bd1a5ed: Pulling fs layer
+5bf2162ae7d3: Waiting
+4c3a8c614c3a: Waiting
+60698bd1a5ed: Waiting
+deb688edebb2: Waiting
+fa2814be645c: Waiting
+696628b66b50: Waiting
+9d58805976c1: Waiting
+124699373f49: Waiting
+503c8399e5f1: Waiting
+ccdba1214dc6: Waiting
+b43ad0aedb87: Verifying Checksum
+b43ad0aedb87: Download complete
+696628b66b50: Download complete
+9d58805976c1: Verifying Checksum
+9d58805976c1: Download complete
+11422d7ca1a4: Download complete
+124699373f49: Verifying Checksum
+124699373f49: Download complete
+503c8399e5f1: Verifying Checksum
+503c8399e5f1: Download complete
+5bf2162ae7d3: Download complete
+ba8be34911c2: Verifying Checksum
+ba8be34911c2: Download complete
+fa2814be645c: Verifying Checksum
+fa2814be645c: Download complete
+ccdba1214dc6: Download complete
+11422d7ca1a4: Pull complete
+b43ad0aedb87: Pull complete
+deb688edebb2: Verifying Checksum
+deb688edebb2: Download complete
+60698bd1a5ed: Verifying Checksum
+60698bd1a5ed: Download complete
+ba8be34911c2: Pull complete
+696628b66b50: Pull complete
+9d58805976c1: Pull complete
+124699373f49: Pull complete
+503c8399e5f1: Pull complete
+5bf2162ae7d3: Pull complete
+deb688edebb2: Pull complete
+fa2814be645c: Pull complete
+4c3a8c614c3a: Verifying Checksum
+4c3a8c614c3a: Download complete
+4c3a8c614c3a: Pull complete
+ccdba1214dc6: Pull complete
+60698bd1a5ed: Pull complete
+Digest: sha256:637fb8c8399634b02c2179da72566ce11644435e5d93e895bdbde4b1f9b0882a
+Status: Downloaded newer image for ghcr.io/firecrawl/playwright-service:latest
+ghcr.io/firecrawl/playwright-service:latest
+OK ghcr.io/firecrawl/playwright-service:latest
+REPOSITORY                             TAG            IMAGE ID       CREATED         SIZE
+ghcr.io/firecrawl/playwright-service   latest         ac1957286b79   5 days ago      1.5GB
+redis                                  alpine         9722accf3e8e   6 days ago      120MB
+ghcr.io/firecrawl/nuq-postgres         latest         b61941d514b9   13 days ago     455MB
+ghcr.io/firecrawl/firecrawl            2.11.162       c77d00ff7130   3 months ago    1.78GB
+rabbitmq                               3-management   de912cbbf07f   11 months ago   252MB
+latest: Pulling from firecrawl/firecrawl
+11422d7ca1a4: Already exists
+b43ad0aedb87: Already exists
+ba8be34911c2: Already exists
+696628b66b50: Already exists
+9d58805976c1: Already exists
+124699373f49: Already exists
+6ffa832f033b: Pulling fs layer
+75c97df5e780: Pulling fs layer
+3d22254e0701: Pulling fs layer
+bb127e301e57: Pulling fs layer
+85c78a46701a: Pulling fs layer
+cc336a64996e: Pulling fs layer
+44c8f673b685: Pulling fs layer
+9a65c6b307b8: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+bb127e301e57: Waiting
+85c78a46701a: Waiting
+44c8f673b685: Waiting
+cc336a64996e: Waiting
+3d22254e0701: Verifying Checksum
+3d22254e0701: Download complete
+6ffa832f033b: Verifying Checksum
+6ffa832f033b: Download complete
+85c78a46701a: Verifying Checksum
+85c78a46701a: Download complete
+cc336a64996e: Verifying Checksum
+cc336a64996e: Download complete
+44c8f673b685: Verifying Checksum
+44c8f673b685: Download complete
+75c97df5e780: Verifying Checksum
+75c97df5e780: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+6ffa832f033b: Pull complete
+9a65c6b307b8: Verifying Checksum
+9a65c6b307b8: Download complete
+75c97df5e780: Pull complete
+3d22254e0701: Pull complete
+bb127e301e57: Verifying Checksum
+bb127e301e57: Download complete
+bb127e301e57: Pull complete
+85c78a46701a: Pull complete
+cc336a64996e: Pull complete
+44c8f673b685: Pull complete
+9a65c6b307b8: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:842054201f2b1b74fbedb6685e0fc72ce196c5f17a1aaaa8ab32522e21a6d8dc
+Status: Downloaded newer image for ghcr.io/firecrawl/firecrawl:latest
+ghcr.io/firecrawl/firecrawl:latest

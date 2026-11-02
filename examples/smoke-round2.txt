@@ -1,0 +1,12 @@
+=== smoke round2 2026-11-02 09:58:02 +0800 ===
+NAME                                IMAGE                                         COMMAND                  SERVICE              CREATED          STATUS                    PORTS
+cn-firecrawl-api-1                  ghcr.io/firecrawl/firecrawl:latest            "docker-entrypoint.s…"   api                  14 seconds ago   Up 8 seconds              127.0.0.1:3002->3002/tcp, 8080/tcp
+cn-firecrawl-nuq-postgres-1         ghcr.io/firecrawl/nuq-postgres:latest         "docker-entrypoint.s…"   nuq-postgres         14 seconds ago   Up 13 seconds             5432/tcp
+cn-firecrawl-playwright-service-1   ghcr.io/firecrawl/playwright-service:latest   "docker-entrypoint.s…"   playwright-service   14 seconds ago   Up 13 seconds             
+cn-firecrawl-rabbitmq-1             rabbitmq:3-management                         "docker-entrypoint.s…"   rabbitmq             14 seconds ago   Up 13 seconds (healthy)   4369/tcp, 5671-5672/tcp, 15671-15672/tcp, 15691-15692/tcp, 25672/tcp
+cn-firecrawl-redis-1                redis:alpine                                  "docker-entrypoint.s…"   redis                14 seconds ago   Up 13 seconds             6379/tcp
+try 1: HTTP 000000 body=
+try 2: HTTP 000000 body=
+try 3: HTTP 200 body={"status":"ok"}
+=== scrape ===
+SCRAPE_TIMEOUT (not OK)

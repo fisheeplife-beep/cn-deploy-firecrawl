@@ -1,0 +1,5 @@
+# GHCR probe 2026-11-02 10:02:34 +0800
+OK ghcr.io/firecrawl/firecrawl:latest mediaType=application/vnd.docker.distribution.manifest.list.v2+json plats=linux/amd64,linux/arm64
+OK ghcr.io/firecrawl/firecrawl:2.11.162 mediaType=application/vnd.docker.distribution.manifest.list.v2+json plats=linux/amd64,linux/arm64
+OK ghcr.io/firecrawl/playwright-service:latest mediaType=application/vnd.docker.distribution.manifest.list.v2+json plats=linux/amd64,linux/arm64
+OK ghcr.io/firecrawl/nuq-postgres:latest mediaType=application/vnd.docker.distribution.manifest.list.v2+json plats=linux/amd64,linux/arm64

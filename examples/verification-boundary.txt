@@ -1,0 +1,21 @@
+# Verification snippets (Asia/Shanghai 2026-11-02 10:00:39 +0800)
+
+## Images pulled
+REPOSITORY                             TAG            IMAGE ID       SIZE
+ghcr.io/firecrawl/firecrawl            latest         7d09a6a9bffb   1.3GB
+ghcr.io/firecrawl/playwright-service   latest         ac1957286b79   1.5GB
+redis                                  alpine         9722accf3e8e   120MB
+ghcr.io/firecrawl/nuq-postgres         latest         b61941d514b9   455MB
+ghcr.io/firecrawl/firecrawl            2.11.162       c77d00ff7130   1.78GB
+rabbitmq                               3-management   de912cbbf07f   252MB
+
+## Readiness (after compose up)
+curl http://127.0.0.1:3002/v0/health/readiness
+(api may have died)
+
+## Inter-container TCP from api (this sandbox)
+redis:6379 TIMEOUT
+playwright-service:3000 TIMEOUT
+
+## Scrape
+POST /v2/scrape → timed out (0 bytes) due to redis/playwright TCP TIMEOUT on Docker bridge in author sandbox.

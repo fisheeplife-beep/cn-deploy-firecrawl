@@ -1,0 +1,20 @@
+=== Firecrawl CN preflight ===
+
+Host: Linux x86_64
+✅ curl present
+✅ git present
+✅ docker: Docker version 27.5.1, build 9f9e405
+✅ docker compose: Docker Compose version v2.32.4
+⚠️  docker daemon not reachable (pull/up will fail until fixed)
+✅ python3 present (probe-ghcr)
+✅ Disk free ~102 GB (images ~4GB+)
+✅ RAM ~15 GB
+
+--- network (best-effort) ---
+✅ Reachable: GitHub firecrawl (HTTP 200)
+✅ Reachable: docs self-host (HTTP 200)
+✅ Reachable: GHCR firecrawl packages (HTTP 200)
+✅ Reachable: Docker Hub redis alpine (HTTP 200)
+✅ Reachable: example.com (HTTP 200)
+
+=== summary: 12 ok / 1 warn / 0 bad ===
